@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My cats</title>
+  </head>
+  <body>
+    <!-- 
+      Блочные: h1-h6, p, br, main, header, footer, section, ul, ol, div
+
+      Строчные: a, em, i, b, strong, img, span
+
+     -->
+
+    <head>
+      <!-- Тег хедер, хранит в себе информацию о заголовке сайта -->
+      <h1>CapPhotoApp</h1>
+    </head>
+    <main>
+      <!-- Секция с фотографией котёнка -->
+      <section>
+        <h2>Cat Photos</h2>
+
+        <p>
+          <span>Click</span>
+          <a
+            href="https://petstory.ru/knowledge/cats/kittens/kogda-mozhno-zabirat-kotenka-ot-koshki/"
+            target="_blank"
+            >here
+          </a>
+          to view more cat photos
+        </p>
+
+        <img
+          src="./pictures/cats/small-white-cat.jpg"
+          alt="Cute white cat"
+          width="300"
+        />
+      </section>
+
+      <!-- Секция о том , что котятам нравится -->
+      <section>
+        <h2>Cat lists</h2>
+        <h3>Things cats love</h3>
+
+        <ul>
+          <li>Cat toys</li>
+          <li>Laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <!-- Маркированный список. В котором элементы стоят не по порядку -->
+
+        <a
+          href="https://www.edimdoma.ru/jivem_doma/posts/21714-vkusnaya-klassika-12-retseptov-lazani-ot-edim-doma"
+          target="_blank"
+        >
+          <img
+            src="./pictures/dish/dish-lazagna.jpg"
+            alt="Tasty looking lasagna"
+            width="300"
+          />
+        </a>
+
+        <p>Cats <em>love</em> lasagna</p>
+      </section>
+
+      <!-- Секция о том, что котята не любят -->
+      <section>
+        <h3>Things cats hate</h3>
+
+        <ol>
+          <li>Dogs</li>
+          <li>Thunder</li>
+          <li>Other Cats</li>
+        </ol>
+        <!-- Нумерованный список. Элементы стоят по порядку -->
+
+        <a
+          href="https://pixabay.com/ru/images/search/%D0%BA%D0%BE%D1%82%D1%8F%D1%82%D0%B0/"
+          target="_blank"
+        >
+          <img
+            src="./pictures/cats/three-little-cats.jpg"
+            alt="Three fancy looking cats"
+            width="300"
+          />
+        </a>
+
+        <p>Cats <strong>hate</strong> other cats</p>
+      </section>
+      <hr />
+      <section>
+        <table>
+          <tr>
+            <th></th>
+            <th>Things cat love</th>
+            <th>Things cat hate</th>
+          </tr>
+          <tr>
+            <th rowspan="3">Cats</th>
+            <td>lasagna</td>
+            <td>dogs</td>
+          </tr>
+          <tr>
+            <td>toys</td>
+            <td>thunder</td>
+          </tr>
+          <tr>
+            <td>lasers pointers</td>
+            <td>other cats</td>
+          </tr>
+          <tr>
+            <td>1234567</td>
+            <td>1234567</td>
+          </tr>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+          <label for="name-input"> Enter your name </label>
+          <input
+            type="text"
+            placeholder="Your name"
+            name="name"
+            id="name-input"
+            required
+          />
+          <br />
+          <label for="surname-input"> Enter your surname</label>
+          <input
+            type="text"
+            placeholder="Your surname"
+            name="surname"
+            id="surname-input"
+            required
+          />
+          <br />
+          <!-- <input type="password" />
+          <input type="number" /> -->
+
+          <label for="football"> Football</label>
+          <input
+            type="checkbox"
+            checked
+            id="football"
+            name="sport"
+            value="football"
+          />
+          <label for="basketball"> Basketball</label>
+          <input
+            type="checkbox"
+            id="basketball"
+            name="sport"
+            value="basketball"
+          />
+          <label for="tennis"> Tennis</label>
+          <input type="checkbox" id="tennis" name="sport" value="tennis" />
+          <br />
+
+          <p>Your gender</p>
+
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male" checked />
+
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <!-- 
+            name: Alex      
+            surname: Eleven  
+            sport: tennis, basketball
+            gender: male
+           -->
+
+          <!-- 
+            name: 
+            surname:
+            sport: football
+            gender: male
+            -->
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
